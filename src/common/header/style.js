@@ -115,3 +115,85 @@ export const Button =styled.div`
         }
     }
 `
+export const SearchInfo = styled.div`
+    visibility: visible;
+    opacity: 1;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(0,0,0,.2);
+    margin-top: 9px;
+    width: 250px;
+    left: 0;
+    top: 100%;
+    border-radius: 4px;
+    min-height:120px;
+    &::after{
+        content:"";
+        position:absolute;
+        top: -7px;
+        left: 20px;
+        width: 24px;
+        height: 24px;
+        transform:rotateZ(45deg);
+        z-index:-1;
+        background:#fff;
+        box-shadow: 0 0 8px rgba(0,0,0,.2);
+    }
+    &::before{
+        content:"";
+        position:absolute;
+        width: 0;
+        height: 0;
+        border: 12px solid transparent;
+        border-bottom-color: #fff;
+        left: 20px;
+        bottom: 99%;
+    }
+`
+export const SrearchHot = styled.div`
+    padding: 20px 20px 10px;
+    border-bottom: 1px solid #f0f0f0;
+    div{
+        overflow:hidden;
+        margin-bottom: 10px;
+    }
+    .hotTitle{
+        float: left;
+        font-size: 14px;
+        color: #969696;
+    }
+    .changeHotWord{
+        float: right;
+        font-size: 13px;
+        color: #969696;
+        background-color: transparent;
+        border-width: 0;
+        padding: 0;
+        cursor:pointer;
+        text-decoration:none;
+        :hover{
+            color: #333;
+        }
+    }
+    ul{
+        overflow:hidden;
+    }
+`
+export const HotWord =styled.li`
+    margin-right: 10px;
+    display: inline-block;
+    line-height: 28px;
+    a{
+        padding: 2px 6px;
+        font-size: 12px;
+        color: #787878;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        cursor:pointer;
+        text-decoration:none;
+    }
+    a:hover{
+        color: #333;
+        border-color: #b4b4b4;
+    }
+`
